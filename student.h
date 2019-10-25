@@ -2,6 +2,7 @@
 #define STUDENT_H
 
 typedef struct Student_struct {
+	int id;
     char fName[10];
     int age;
     double gpa;
@@ -19,7 +20,7 @@ typedef struct Student_struct {
 	Returns: VOID
 */
 void getStudentInformation(Student[], FILE*, int);
-Student searchStudent();
+Student searchStudent(Student[], int, int);
 
 #endif
 
